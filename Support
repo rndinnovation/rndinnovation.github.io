@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roami Support — R&D Innovation</title>
+<meta name="description" content="Support and help for Roami: Life Tracker &amp; Pet. Contact us, browse common questions, and learn how to get the most out of the app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16202B;
+    --slate:#5A6B7B;
+    --mist:#EDF1F3;
+    --paper:#FBFCFC;
+    --sprout:#2F8F6B;
+    --line:#D6DEE3;
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --body:'IBM Plex Sans',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:0 24px}
+
+  /* ---- Signature: segmented stat bar (a nod to the pet's status meters) ---- */
+  .bar{display:flex;gap:3px;margin:0 0 28px}
+  .bar span{
+    height:8px;flex:1;background:var(--line);border-radius:1px;
+  }
+  .bar span:nth-child(-n+7){background:var(--sprout)}
+
+  header{padding:72px 0 0}
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 14px;
+  }
+  h1{
+    font-family:var(--display);font-weight:700;
+    font-size:clamp(34px,6vw,46px);line-height:1.1;
+    letter-spacing:-.02em;margin:0 0 12px;
+  }
+  .lede{font-size:19px;color:var(--slate);margin:0 0 8px;max-width:52ch}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:none}
+  h2{
+    font-family:var(--display);font-weight:700;font-size:24px;
+    letter-spacing:-.01em;margin:0 0 24px;
+  }
+  h3{
+    font-family:var(--display);font-weight:500;font-size:18px;
+    margin:32px 0 6px;
+  }
+  h3:first-of-type{margin-top:0}
+  p{margin:0 0 14px}
+  a{color:var(--sprout);text-decoration:underline;text-underline-offset:3px}
+  a:hover{color:var(--ink)}
+  a:focus-visible{outline:2px solid var(--sprout);outline-offset:3px;border-radius:2px}
+
+  /* ---- Contact card ---- */
+  .contact{
+    background:var(--mist);border-radius:6px;padding:28px;
+  }
+  .contact .label{
+    font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--slate);margin:0 0 6px;
+  }
+  .contact .email{
+    font-family:var(--display);font-weight:700;font-size:22px;
+    word-break:break-all;
+  }
+  .contact .email a{text-decoration:none}
+  .contact .email a:hover{text-decoration:underline}
+  .note{font-size:15px;color:var(--slate);margin:14px 0 0}
+
+  ul{margin:0 0 14px;padding-left:20px}
+  li{margin-bottom:6px}
+
+  footer{
+    padding:40px 0 64px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--slate);
+    display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;
+  }
+  footer a{color:var(--slate)}
+
+  @media (max-width:520px){
+    body{font-size:16px}
+    header{padding-top:48px}
+    section{padding:44px 0}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .bar span{transition:background .3s ease}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="bar" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p class="eyebrow">Roami · Life Tracker &amp; Pet</p>
+    <h1>Support</h1>
+    <p class="lede">Questions, bugs, feedback, or account help — start here. If you can't find your answer below, email us and we'll get back to you.</p>
+  </header>
+
+  <section>
+    <h2>Get in touch</h2>
+    <div class="contact">
+      <p class="label">Email support</p>
+      <p class="email"><a href="mailto:info@rnd-innovation.com">info@rnd-innovation.com</a></p>
+      <p class="note">We aim to reply within 2 business days. To help us resolve issues faster, include your device model, iOS version, and the app version (found in Settings inside Roami).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+
+    <h3>What is Roami?</h3>
+    <p>Roami is a life tracker built around a virtual pet. Logging your workouts, expenses, journal entries, and focus sessions keeps your companion healthy and growing. The habits you build in real life are what the pet feeds on.</p>
+
+    <h3>Where is my data stored?</h3>
+    <p>Your entries are stored on your device. Roami does not require an account to use, and we do not sell your data. See the <a href="privacy.html">Privacy Policy</a> for full details.</p>
+
+    <h3>My pet stopped growing. What happened?</h3>
+    <p>Your companion responds to consistency. If you haven't logged activity recently, its stats will decline. Log a workout, journal entry, expense, or focus session to bring it back up.</p>
+
+    <h3>I found a bug or the app crashed.</h3>
+    <p>Sorry about that. Email us with a short description of what you were doing when it happened, plus your device model and iOS version. Screenshots help a lot.</p>
+
+    <h3>Can I export or delete my data?</h3>
+    <p>Because your data lives on your device, deleting the app removes it. If you need help with data export or deletion, email us and we'll walk you through it.</p>
+
+    <h3>I have a feature request.</h3>
+    <p>We read every message. Tell us what you're trying to do and why the current app gets in the way — that's the most useful kind of feedback we can get.</p>
+  </section>
+
+  <section>
+    <h2>Before you email us</h2>
+    <p>These steps resolve most issues:</p>
+    <ul>
+      <li>Make sure you're running the latest version of Roami from the App Store.</li>
+      <li>Restart the app, then restart your device.</li>
+      <li>Check that iOS is up to date.</li>
+    </ul>
+    <p>Still stuck? <a href="mailto:info@rnd-innovation.com">Email us</a> — we'd rather hear from you than have you struggle.</p>
+  </section>
+
+  <footer>
+    <span>© 2026 R&amp;D Innovation LLC</span>
+    <span><a href="privacy.html">Privacy Policy</a></span>
+  </footer>
+
+</div>
+
+</body>
+</html>
