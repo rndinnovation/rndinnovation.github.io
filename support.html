@@ -32,12 +32,6 @@
   }
   .wrap{max-width:680px;margin:0 auto;padding:0 24px}
 
-  /* ---- Signature: segmented stat bar (a nod to the pet's status meters) ---- */
-  .bar{display:flex;gap:3px;margin:0 0 28px}
-  .bar span{
-    height:8px;flex:1;background:var(--line);border-radius:1px;
-  }
-  .bar span:nth-child(-n+7){background:var(--sprout)}
 
   header{padding:72px 0 0}
   .eyebrow{
@@ -98,9 +92,6 @@
     header{padding-top:48px}
     section{padding:44px 0}
   }
-  @media (prefers-reduced-motion:no-preference){
-    .bar span{transition:background .3s ease}
-  }
 </style>
 </head>
 <body>
@@ -108,10 +99,6 @@
 <div class="wrap">
 
   <header>
-    <div class="bar" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
     <p class="eyebrow">Roami · Life Tracker &amp; Pet</p>
     <h1>Support</h1>
     <p class="lede">Questions, bugs, feedback, or account help — start here. If you can't find your answer below, email us and we'll get back to you.</p>
