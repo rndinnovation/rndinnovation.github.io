@@ -10,43 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#16202B;
-    --slate:#5A6B7B;
-    --mist:#EDF1F3;
-    --paper:#FBFCFC;
-    --sprout:#2F8F6B;
-    --line:#D6DEE3;
+    --ink:#16202B;--slate:#5A6B7B;--mist:#EDF1F3;--paper:#FBFCFC;
+    --sprout:#2F8F6B;--line:#D6DEE3;
     --display:'Space Grotesk',system-ui,sans-serif;
     --body:'IBM Plex Sans',system-ui,sans-serif;
     --mono:'IBM Plex Mono',ui-monospace,monospace;
   }
   *{box-sizing:border-box}
-  body{
-    margin:0;background:var(--paper);color:var(--ink);
-    font-family:var(--body);font-size:17px;line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
   .wrap{max-width:640px;margin:0 auto;padding:0 24px}
-
-
-  header{padding:72px 0 0}
-  .eyebrow{
-    font-family:var(--mono);font-size:12px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--slate);margin:0 0 14px;
-  }
-  h1{
-    font-family:var(--display);font-weight:700;
-    font-size:clamp(32px,5.5vw,42px);line-height:1.1;
-    letter-spacing:-.02em;margin:0 0 12px;
-  }
+  header{padding:64px 0 0}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin:0 0 14px}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(32px,5.5vw,42px);line-height:1.1;letter-spacing:-.02em;margin:0 0 12px}
   .updated{font-family:var(--mono);font-size:13px;color:var(--slate);margin:0}
-
   section{padding:40px 0;border-top:1px solid var(--line)}
   section:first-of-type{border-top:none;padding-top:36px}
-  h2{
-    font-family:var(--display);font-weight:700;font-size:21px;
-    letter-spacing:-.01em;margin:0 0 14px;
-  }
+  h2{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.01em;margin:0 0 14px}
   p{margin:0 0 14px}
   p:last-child{margin-bottom:0}
   ul{margin:0 0 14px;padding-left:20px}
@@ -54,57 +33,57 @@
   a{color:var(--sprout);text-decoration:underline;text-underline-offset:3px}
   a:hover{color:var(--ink)}
   a:focus-visible{outline:2px solid var(--sprout);outline-offset:3px;border-radius:2px}
-
   .callout{background:var(--mist);border-radius:6px;padding:24px}
-
-  footer{
-    padding:36px 0 64px;border-top:1px solid var(--line);
-    font-size:14px;color:var(--slate);
-    display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between;
-  }
+  footer{padding:36px 0 64px;border-top:1px solid var(--line);font-size:14px;color:var(--slate);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
   footer a{color:var(--slate)}
-
-  @media (max-width:520px){
-    body{font-size:16px}
-    header{padding-top:48px}
-    section{padding:32px 0}
-  }
+  @media (max-width:520px){body{font-size:16px}header{padding-top:48px}section{padding:32px 0}}
 </style>
 </head>
 <body>
-
 <div class="wrap">
 
   <header>
     <p class="eyebrow">Roami · Life Tracker &amp; Pet</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 13, 2026</p>
+    <p class="updated">Last updated: July 15, 2026</p>
   </header>
 
   <section>
     <div class="callout">
-      <p>Roami keeps your data on your device. No account required. We don't collect it, sell it, or track you.</p>
+      <p>Roami stores the things you log on your device, or in your own iCloud account if you turn on sync. No account or sign-up is required. We don't run servers that hold your data. The one exception is advertising: the free version shows ads served by Google AdMob, which involves Google as a third party. Details below.</p>
     </div>
   </section>
 
   <section>
-    <h2>What stays on your device</h2>
-    <p>Everything you log in Roami — workouts, expenses, journal entries, focus sessions, and your pet's progress — is stored locally on your device. It is never sent to our servers, and we cannot read it.</p>
+    <h2>What you log stays yours</h2>
+    <p>Everything you record in Roami &mdash; workouts, expenses, journal entries, focus sessions, and your pet's progress &mdash; is stored locally on your device by default.</p>
+    <p>If you turn on iCloud sync, that data is stored in your personal iCloud account so it stays consistent across your devices. This uses Apple's private CloudKit storage, which is tied to your Apple ID. We cannot access or read it, and it never passes through a server we control.</p>
   </section>
 
   <section>
-    <h2>What we don't collect</h2>
+    <h2>Advertising</h2>
+    <p>The free version of Roami displays ads through Google AdMob. To show ads, Google may collect and process certain information from your device, such as your device's advertising identifier (IDFA), general location inferred from your IP address, and ad interaction data. Google acts as an independent third party for this purpose.</p>
+    <p>On your first launch, iOS will ask whether you allow Roami to track you across apps and websites. If you decline, ads are still shown but are not personalized using your advertising identifier. You can change this any time in your device's Settings under Privacy &amp; Security &gt; Tracking.</p>
+    <p>How Google uses this data is governed by Google's own privacy policy, available at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>. Subscribing to remove ads stops Roami from showing them.</p>
+  </section>
+
+  <section>
+    <h2>Purchases and subscriptions</h2>
+    <p>Roami offers optional in-app purchases and a subscription, handled entirely by Apple through the App Store. We never see or store your payment details. Apple provides us only with anonymized transaction information needed to deliver what you bought and to verify subscription status.</p>
+  </section>
+
+  <section>
+    <h2>What we don't collect ourselves</h2>
     <ul>
-      <li>No account, name, email, or phone number</li>
       <li>No location, contacts, or photos</li>
-      <li>No advertising or cross-app tracking</li>
-      <li>No selling or sharing of personal information</li>
+      <li>No third-party analytics or crash-reporting SDKs</li>
+      <li>No selling or sharing of your personal information to data brokers</li>
     </ul>
   </section>
 
   <section>
     <h2>Deleting your data</h2>
-    <p>Deleting Roami from your device removes the data it stored. Nothing is left behind with us.</p>
+    <p>Deleting Roami from your device removes the data stored on it. If you used iCloud sync, you can remove that data in your device's Settings under iCloud. To reset your advertising identifier, use your device's Settings under Privacy &amp; Security &gt; Tracking.</p>
   </section>
 
   <section>
@@ -119,6 +98,5 @@
   </footer>
 
 </div>
-
 </body>
 </html>
